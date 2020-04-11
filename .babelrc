@@ -1,0 +1,18 @@
+{
+  "plugins": ["transform-flow-strip-types"],
+  "presets": [
+    "@babel/preset-flow",
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "chrome": "58",
+          "ie": "11"
+        },
+        "corejs": 2,
+        "useBuiltIns": "usage"
+      }
+    ],
+    "@babel/preset-react"
+  ]
+}
